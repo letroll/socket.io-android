@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">socketio</string>
+    <string name="pseudo">pseudo</string>
+    <string name="action_settings">Settings</string>
+        <string name="not_connected">déconnecté</string>
+        <string name="connected">connecté</string>
+</resources>

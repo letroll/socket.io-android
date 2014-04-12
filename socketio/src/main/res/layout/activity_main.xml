@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvStatus"
+           android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvStatus"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtPseudo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/pseudo" />
+
+        <Button
+            android:id="@+id/btnClearTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clearTxt" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRefreshData"
+        android:layout_below="@+id/llTop"
+        android:transcriptMode="alwaysScroll"
+        />
+
+    <Button
+        android:id="@+id/btnRefreshData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Send" />
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/btnRefreshData" />
+</RelativeLayout>
